@@ -9,7 +9,7 @@ console.log(wages);
 let agent ="31";
 console.log(agent);
 let sum = wages*agent;
-console.log(sum);
+console.log("Tổng =",sum);
 // OUTPUT : Tổng tiền lương nhân viên
 
 // Bài tập 2: Tính trung bình 5 số thực
@@ -28,9 +28,9 @@ console.log(x4);
 let x5= 3;
 console.log(x5);
 let total = x1 + x2 + x3 + x4 + x5 
-console.log(total);
+console.log("Tổng cộng =",total);
 let medium = Math.floor(total/5) ;
-console.log(medium);
+console.log("Trung bình =",medium);
 //OUTPUT: Trung bình của 5 số thực
 
 //Bài tập 3: Quy đổi tiền
@@ -43,7 +43,7 @@ console.log(usd);
 let vnd= 23.500;
 console.log(vnd);
 let totalvnd= Math.floor(usd*vnd);
-console.log(totalvnd);
+console.log("Tổng tiền quy đổi =",totalvnd);
 //OUTPUT: Số tổng tiền quy đổi vnd
 
 //Bài tập 4:
@@ -80,4 +80,5 @@ console.log(hangchuc);
 let hangdv = Math.floor(x/10);
 console.log(hangdv);
 let totalx = hangchuc+hangdv;
-console.log(totalx);
+console.log("Tổng x =",totalx);
+//OUTPUT: Tổng 2 biến cộng lại;
