@@ -53,20 +53,16 @@ console.log("Tổng tiền quy đổi =",totalvnd);
 //B3: Gán phét tính cho CHU VI,DIEN TICH
 let AB = 15;
 console.log(AB);
-let AC = 15;
-console.log(AC);
-let BD = 15;
-console.log(BD);
+let BC = 25;
+console.log(BC);
 let CD = 15;
 console.log(CD);
-let TotalLength = AB + CD;
-console.log("Chiều dài",TotalLength);
-let TotalWidth = AC+BD;
-console.log("Chiều rộng",TotalWidth);
-let perimeter = TotalLength*TotalWidth;
-console.log("CHU VI =",perimeter);
-let area =(TotalLength+TotalWidth)*2;
+let AD = 25;
+console.log(AD);
+let area = AB*BC;
 console.log("DIỆN TÍCH =",area);
+let perimeter =(AB+BC)*2;
+console.log("CHU VI =",perimeter);
 //OUTPUT: TÍNH DIỆN TÍCH, CHU VI
 
 //Bài tập 5:
