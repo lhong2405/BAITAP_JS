@@ -1,15 +1,18 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <title>HOMEWORK</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
-  <body>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
     <h1 class="container text-center">HOME WORK</h1>
     <br>
     <br>
@@ -25,7 +28,7 @@
         <br>
         <form action="">
             <button id="total" class="btn btn-danger">TÍNH LƯƠNG</button>
-            <input  id="result" class="buttontotal"> 
+            <input id="result" class="buttontotal">
         </form>
     </div>
     <br>
@@ -43,10 +46,10 @@
         <input id="wages4" class="from-control">
         <label>x5</label>
         <input id="wages5" class="from-control">
-        <br> 
+        <br>
         <br>
         <button id="totalbaitap2" class="btn btn-danger">TÍNH TOÁN</button>
-            <input  id="baitap2"> 
+        <input id="baitap2">
     </div>
     <br>
     <br>
@@ -59,7 +62,7 @@
         <label>SÔ TIỀN QUY ĐỔI THANH</label>
         <input id="VND" class="from-control ">
         <br>
-         <button id="rate" class="btn btn-danger">QUY ĐỔI</button>
+        <button id="rate" class="btn btn-danger">QUY ĐỔI</button>
     </div>
     <br>
     <br>
@@ -72,12 +75,12 @@
         <label>CHIỀU RỘNG</label>
         <input id="BC" class="from-control">
         <br>
-         <button id="totalchuvi" class="btn btn-danger px-md-4">CHU VI</button>
-         <input id="chuvi">
-         <br>
-         <br>
-         <button id="totaldientich" class="btn btn-danger">DIỆN TÍCH</button>
-         <input id="dientich">
+        <button id="totalchuvi" class="btn btn-danger px-md-4">CHU VI</button>
+        <input id="chuvi">
+        <br>
+        <br>
+        <button id="totaldientich" class="btn btn-danger">DIỆN TÍCH</button>
+        <input id="dientich">
     </div>
     <br>
     <br>
@@ -88,29 +91,269 @@
         <br>
         <label> NHẬP SỐ CÓ 2 CHỮ SỐ</label>
         <input id="NUMBER" class="from-control">
-        <br>        
+        <br>
         <button id="numberbtn" class="btn btn-danger">TÍNH TỔNG</button>
-         <input id="totalnumber">
+        <input id="totalnumber">
 
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="container text-center">
+        <H1>JS BUOI 4</H1>
+        <div class="BT1">
+            <h1>Bài 1: Tính ngày mai,hôm qua</h1>
+            <input class="form-control col-sm-4 mx-auto text-center" type="date" name="" id="today"
+                placeholder="dd-mm-yyyy" />
+            <div class="row">
+                <div class="text-right col-sm-6 mx-auto">
+                    <button class="btn btn-dark" id="datebefore">ngày hôm trước</button>
+                </div>
+                <div class="col-sm-6 mx-auto">
+                    <button class="btn btn-dark" id="dateafter">ngày hôm sau</button>
+                    <br>
+                    <input id="bt1"></input>
+                </div>  
+            </div>
+        </div>
+
+        <div class="BT2">
+            <h1>BÀI 2: TÍNH NGÀY</h1>
+            <label>
+                <h1>Nhập tháng</h1>
+            </label>
+            <input id="month2" type="number">
+            <br>
+            <label>
+                <h1>Nhập năm</h1>
+            </label>
+            <input id="year2" type="number">
+            <button id="btntinh" class="btn btn-dark">Tính ngày </button>
+            <input id="btnbai2">
+        </div>
+        <div class="BT3">
+            <h1>BÀI 3: ĐỌC 3 CHỮ S</h1>
+            <label>
+                <h1>Nhập 3 chữ số</h1>
+            </label>
+            <input id="number3" type="text">
+            <br>
+            <button id="read" class="btn btn-dark">ĐỌC SỐ</button>
+            <input id="btnbai3">
+        </div>
+        <div class="BT4 m-5">
+            <h1>BÀI 4: SINH VIÊN XA TRƯỜNG NHẤT</h1>
+            <div class="sv1 d-inline-flex justify-content-between">
+                <label>SINH VIEN 1</label>
+                <div class="content">
+                    <h2>Nhập tên</h2>
+                    <input id="namesv1" type="text">
+                    <h2>Nhập tọa độ x</h2>
+                    <input id="xsv1" type="number">
+                    <h2>Nhập tọa độ y</h2>
+                    <input id="ysv1" type="number">
+                </div>
+                <label>SINH VIEN 2</label>
+                <div class="content">
+                    <h2>Nhập tên</h2>
+                    <input id="namesv2" type="text">
+                    <h2>Nhập tọa độ x</h2>
+                    <input id="xsv2" type="number">
+                    <h2>Nhập tọa độ y</h2>
+                    <input id="ysv2" type="number">
+                </div>
+                <label>SINH VIEN 3</label>
+                <div class="content">
+                    <h2>Nhập tên</h2>
+                    <input id="namesv3" type="text">
+                    <h2>Nhập tọa độ x</h2>
+                    <input id="xsv3" type="number">
+                    <h2>Nhập tọa độ y</h2>
+                    <input id="ysv3" type="number">
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="truong4 d-inline-flex justify-content-between">
+                <label>
+                    <h2>TỌA ĐỘ TRƯỜNG</h2>
+                </label>
+                <div class="taodox">
+                    <h3>Tọa độ x</h3>
+                    <input id="x4" type="number">
+                </div>
+                <div class="taodoy">
+                    <h3>Tọa độ y</h3>
+                    <input id="y4" type="number">
+                </div>
+            </div>
+            <button id="find" class="btn btn-dark">TÌM</button>
+            <input id="btnbai4">
+        </div>
 
 
+        <div class="bt5">
+            <h1>BÀI 5: SẮP XẾP THEO THỨ TỰ NHỎ TỚI LỚN</h1>
+            <label>
+                <h2>NHẤP SỐ THỨ NHÂT</h2>
+            </label>
+            <input id="num1" type="number">
+            <label>
+                <h2>NHẤP SỐ THỨ HAI</h2>
+            </label>
+            <input id="num2" type="number">
+            <label>
+                <h2>NHẤP SỐ THỨ BA</h2>
+            </label>
+            <input id="num3" type="number">
+            <button id="btn5" class="btn btn-dark">SẮP XẾP</button>
+            <input id="btnbai5">
+        </div>
+
+        <div class="bt6 m-lg-3">
+            <h1>BÀI 6: CHƯƠNG TRÌNH CHÀO HỎI </h1>
+            <section>
+                <select id="family" class="form-control">
+                    <option value="">CHỌN THÀNH VIÊN</option>
+                    <option value="B">BỐ</option>
+                    <option value="M">MẸ</option>
+                    <option value="E">EM GÁI</option>
+                    <option value="A">ANH TRAI</option>
+                </select>
+            </section>
+            <br>
+            <button onclick="ex1()" class="btn btn-dark">GỬI LỜI CHÀO</button>
+            <input id="btnbai6">
+        </div>
+        <div class="bt7 m-lg-3">
+            <h1>BÀI 7: ĐẾM SỐ CHẴN </h1>
+            <label>SỐ THỨ NHẤT </label>
+            <input id="name1" type="number">
+            <label>SỐ THỨ HAI </label>
+            <input id="name2" type="number">
+            <label>SỐ THỨ BA </label>
+            <input id="name3" type="number">
+            <br>
+            <button id="đem" class="btn btn-dark">ĐẾM</button>
+            <input id="btnbai7">
+        </div>
+
+        <div class="bt8 m-lg-3">
+            <h1>BÀI 8: ĐOÁN HÌNH TAM GIÁC </h1>
+            <br>
+            <label>
+                <h1>NHẬP ĐỘ DÀI CẠNH 1</h1>
+            </label>
+            <input id="canh1" type="number">
+            <h1>NHẬP ĐỘ DÀI CẠNH 2</h1></label>
+            <input id="canh2" type="number">
+            <h1>NHẬP ĐỘ DÀI CẠNH 3</h1></label>
+            <input id="canh3" type="number">
+            <br>
+            <br>
+            <button id="btn_bt8" class="btn btn-dark">ĐOÁN</button>
+            <input id="btnbai8">
+        </div>
+        <br>
+        <br>
 
 
+        <h1>JS BUOI 5</h1>
+    <h1>bài 1: quản lý tuyển sinh</h1>
+    <form action="">
+      <input id="txtStandardGrade" type="text" placeholder="điểm chuẩn" />
+      <input id="txtSubject1" type="text" placeholder="môn 1" />
+      <input id="txtSubject2" type="text" placeholder="môn 2" />
+      <input id="txtSubject3" type="text" placeholder="môn 3" />
+      <select name="" id="area">
+        <option value="X">không</option>
+        <option value="A">khu vực A</option>
+        <option value="B">khu vực B</option>
+        <option value="C">khu vực C</option>
+      </select>
+      <select name="" id="type">
+        <option value="1">loại 1</option>
+        <option value="2">loại 2</option>
+        <option value="3">loại 3</option>
+        <option value="0">không</option>
+      </select>
+      <button onclick="ex1()" type="button">kiểm tra</button>
+      <input id="grade_result" value="Đang kiểm tra" disabled>
+    </form>
+    <br>
+    <br>
 
+    <h1>Bài 2 : TÍNH TIỀN ĐIỆN </h1>
+    <input  type="text" placeholder="Nhập họ tên">
+    <input id="value2" type="number" placeholder="nhập số kí kw">
+    <button class="btn btn-dark" onclick=ex5_2()>Tính</button>
+    <input id="totalprice" value="0" disabled>
+    <br>
+    <br>
 
+    <h1>Bài 3 : TÍNH THUẾ THU NHẬP CÁ NHÂN </h1>
+    <input  type="text" placeholder="Nhập họ tên">
+    <input id="vat3" type="number" placeholder="Tổng thu nhập năm">
+    <input id="people3" type="text" placeholder="Số người phụ thuộc">
 
+    <button class="btn btn-dark" onclick=ex5_3()>Tính thuế</button>
+    <input id="totalvat" value="0" disabled>
+    <br>
+    <br>
 
+    <h1>Bài 4 : TÍNH TIỀN CÁP </h1>
+    <select id="custtype4" onchange=displayconnection()>
+        <option value="">Chọn loại khách hàng</option>
+        <option value="home">Nhà Dân</option>
+        <option value="company">Doanh nghiệp</option>
+    </select>
+    
+
+    <input id="cust4" type="number" placeholder="Nhập mã khách hàng">
+    <input id="premium4" type="text" placeholder="Số kênh cao cấp">
+    <input id="connection4" type="number" placeholder="Số kết nối">
+
+    <button class="btn btn-dark" onclick=ex5_4()>Tính tiền cáp</button>
+    <input id="totalfee4" value="0" disabled>
+    </div>
+    </div>
+
+    
+</div>
+</body>
 
 
     
 
-   
-      
+    
+
+
+    <br>
+    <br>
+    <br>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="./HomeWork1/HOMEWORK.JS"></script>
-  </body>
+</body>
+
 </html>
-
-
