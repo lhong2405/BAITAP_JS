@@ -407,7 +407,7 @@ document.getElementById("btn5").onclick = function(){
 
 
 // BÀI TAP 6 
-function ex1() {
+function ex1_6() {
     let family = document.getElementById("family").value;
     let hi;
     switch (family) {
@@ -538,7 +538,7 @@ function calcAreaGrade(area) {
   // }
  
   
-  function ex1() {
+  function ex1_5() {
     let txtStandardGrade = +document.getElementById("txtStandardGrade").value;
     let txtSubject1 = +document.getElementById("txtSubject1").value;
     let txtSubject2 = +document.getElementById("txtSubject2").value;
@@ -688,3 +688,86 @@ function ex5_4() {
     tiencap= phixulyhoadon + phithuekenhcaocap + phidichvucoban;
     result.value= tiencap + " $";
 }
+
+
+//js buổi 6
+//bt1
+function ex1_6() {
+    let sum = 0
+    let i = 0
+while(sum < 10000){
+    i++
+    sum += i    
+} 
+document.getElementById("bt1_6").value= i    
+} 
+
+//bt2
+function ex2_6(){
+    let x_bt2El = +document.getElementById("x_bt2").value
+    let n_bt2El = +document.getElementById("n_bt2").value
+    let sum = 0
+    for(let i = 1; i <= n_bt2El ; i++){
+        sum += Math.pow(x_bt2El,i);
+       }
+   document.getElementById("bt2_6").value = sum 
+}
+
+
+
+
+
+
+
+//bt3
+function ex3_6(){
+    let n_bt3El = +document.getElementById("n_bt3").value
+    let giai_thua = 1
+for (let i = 1 ; i <=n_bt3El ; i++){
+      giai_thua *= i 
+}
+document.getElementById("bt3_6").value = giai_thua
+}
+
+//bt4 
+
+function ex4_6(){
+    // let result = document.getElementById("bt4_6")
+    for(let i = 1 ; i <= 10 ; i++){
+        if(i%2==0){
+            document.getElementById("bt4_6").innerHTML += '<div style="background-color : red ; color: white">Div chẵn</div>'
+        }else{
+            document.getElementById("bt4_6").innerHTML += '<div style="background-color : blue ; color : white">Div lẻ</div>'
+        }
+    }
+}
+
+//bt5 
+function ex5_6(){
+    document.getElementById("bt5_6").value = ""
+    let number_5El = document.getElementById("number_5").value
+    let inso = true
+    for(let i = 2 ; i < number_5El ; i++){
+        for(let x = 2 ; x < i ;x++){
+            if(i%x == 0){
+                inso = false
+            }
+        }
+        if(inso == true){
+            document.getElementById("bt5_6").value += i + " "
+        }
+        inso = true 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
