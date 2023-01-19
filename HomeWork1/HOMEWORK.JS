@@ -760,6 +760,115 @@ function ex5_6(){
     }
 }
 
+//JS BUỔI 7
+
+// // let list2 = [];
+// function btn7_8(){
+//     list.push(+getElement("input7_8").value);
+//  document.getElementById("value7_8").value += getElement("input7_8").value + ","       
+// }
+function getElement(text){
+    return document.getElementById(text)
+}
+
+let ds = []
+let ds2 = [];
+function getinfo(){
+    ds.push(+getElement("input7_8").value)
+    getElement("value7_8").value += getElement("input7_8").value + ","    
+}
+
+//bt1{}
+ function bt1_7(){      
+    getElement("output1_7").value = ds.reduce(function(sum,value){
+        if(value >= 0){
+            return sum + value
+        }
+    })
+ }
+// bt2
+function bt2_7(){
+    let countEL = ds.filter((value)=>value>=0) ;
+    getElement("output2_7").value = countEL.length
+}
+//bt3
+function bt3_7(){
+    let minEl = ds[0];
+    for(let i = 0 ; i < ds.length;i++){
+        if(ds[i] < minEl ){
+            min = ds[i]
+        }
+    }
+    getElement("output3_7").value = minEl
+}
+
+//bt4
+
+function bt4_7(){
+
+    let min = 0
+    let k = false
+    for(let i = 0 ; i < ds.length ;i++){
+        if(ds[i] >= 0){
+            k = true
+            min = ds[i]
+        }
+    }
+    for(let i = 0 ; i < ds.length ; i++){
+        if(ds[i] < min && ds[i] >= 0){
+            min = ds[i];
+        }
+    }
+    if(k == true){
+        getElement("output4_7").value = min
+    }else{
+        getElement("output4_7").value = "Không có số"
+    }
+}
+// bt5
+function bt5_7(){
+    for(let i = ds.length -1 ; i >= 0 ;i-- ){
+        if(ds[i] % 2 === 0){
+            return getElement("output5_7").value = ds[i];
+        }
+    }
+    return getElement("output5_7").value = "không có bất kỳ số chẵn nào"
+}
+// bt6
+function bt6_7(){
+    let vt1el = document.getElementById("vt1").value;
+    let vt2el = document.getElementById("vt2").value;
+    let temp = ds[vt2el-1];
+    ds[vt2el-1] = ds[vt1el-1];
+    ds[vt1el-1] = temp 
+    getElement("output6_7").value = "Mảng sau khi đổi là : "
+    for(let i = 0 ; i < ds.length ;i++){
+        getElement("output6_7").value += ds[i] + ","
+    }
+}
+//bt7
+function bt7_7(){
+}
+
+//bt9
+
+function bt9_7in(){
+   
+    ds2.push(+getElement("int").value);
+    getElement("input9_7").value += getElement("int").value + ","    
+}
+function bt9_7out(){
+    let count = 0;
+    for(let i = 0 ; i < ds2.length ; i++){
+        if(Number.isInteger(ds2[i]) === true){
+            count++;
+        }
+    }
+    getElement("output9_7").value = "Số nguyên : " + count;
+}
+// Em bí luôn rùi mentor ạ....
+
+
 
 
 
